@@ -97,6 +97,11 @@ export ARCHFLAGS="-arch x86_64"
 
 # Set sbin path
 export PATH="/usr/local/sbin:$PATH"
+# Set path for `go get` commands.
+export PATH="/usr/local/opt/go/libexec/bin:$PATH"
+# Set path for where go code can be found.
+export GOPATH="/Users/kylechezik/Documents/WhiteboxGAT-mac/goSpatial"
+export PATH="/Users/kylechezik/Documents/WhiteboxGAT-mac/goSpatial/bin:$PATH"
 
 # Change location/flags of commands
 alias ls='ls -aFG'
