@@ -1,23 +1,17 @@
 " For Tim Popes pathogen.vim plug-in management tool.
 execute pathogen#infect()
 
-" For the Vundle extension
-" set nocompatible
-" filetype off
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-
-" Plugin extensions
-" Plugin 'gmarik/Vundle.vim'
-
-" All plugins added prior to these 2 lines.
-" call vundle#end()
-" filetype plugin indent on
+" ----------------
+" Visual setup
+" ---------------
 
 " Enable Syntax Colouring and Recognition
 syntax enable
 filetype plugin on
 filetype indent on
+colorscheme nord
+set termguicolors
+let g:nord_comment_brightness = 10
 
 " line numbers:
 set nu
@@ -54,26 +48,6 @@ set mouse=nicr
 set noswapfile
 set nobackup
 set nowb
-
-" ----------------
-" Visual setup
-" ---------------
-" set anti enc=utf-8 gfn=Monaco:h14 " Set font and font size.
-
-" Colors and aesthetics
-" set t_Co=256
-" let g:solarized_termcolors = 256
-" let g:solarized_visibility = "normal"
-" let g:solarized_contrast = "normal"
-" let g:solarized_termtrans = 1
-" set background colour based on the time of day:
-" if strftime("%H")<18
-"	set background=light
-" else
-"	set background=dark
-" endif
-" set background=dark
-" colorscheme solarized
 
 " ----------------
 " Search Settings

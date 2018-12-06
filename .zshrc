@@ -111,3 +111,9 @@ alias dirs="dirs -v"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Turn on `z` which helps remember used folders and lets you quickly change directories by just typing z and the final folder of the desired directory.
 . `brew --prefix`/etc/profile.d/z.sh
+
+# added by Anaconda3 5.0.1 installer
+export PATH="/Users/kylechezik/Documents/Research_Apps/anaconda3/bin:$PATH"
+
+# include whitebox_tools
+export PYTHONPATH="/Users/kylechezik/Documents/Research_Apps/WBT/:$PYTHONPATH"
