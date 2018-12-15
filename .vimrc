@@ -11,7 +11,7 @@ filetype plugin on
 filetype indent on
 colorscheme nord
 set termguicolors
-let g:nord_comment_brightness = 10
+let g:nord_comment_brightness = 12
 
 " line numbers:
 set nu
