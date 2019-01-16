@@ -106,6 +106,8 @@ export PATH="/Users/kylechezik/Documents/Research_Apps/WhiteboxGAT-mac/goSpatial
 # Change location/flags of commands
 alias ls='ls -aFG'
 alias dirs="dirs -v"
+alias code='open -a "Visual Studio Code.app"'
+
 
 #Tun on zsh syntax highlighting.
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
