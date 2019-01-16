@@ -114,6 +114,15 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # added by Anaconda3 5.0.1 installer
 export PATH="/Users/kylechezik/Documents/Research_Apps/anaconda3/bin:$PATH"
+export PATH="/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/python3:$PATH"
+
+# Switches based on local environment.
+export VIRTUALENVWRAPPER_LOCATION=/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/python3
+export WORKON_HOME=~/Envs
+source /Users/kylechezik/Documents/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
 
 # include whitebox_tools
 export PYTHONPATH="/Users/kylechezik/Documents/Research_Apps/WBT/:$PYTHONPATH"
+
+
