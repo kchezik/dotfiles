@@ -107,6 +107,7 @@ export PATH="/Users/kylechezik/Documents/Research_Apps/WhiteboxGAT-mac/goSpatial
 alias ls='ls -aFG'
 alias dirs="dirs -v"
 alias code='open -a "Visual Studio Code.app"'
+alias Insight='ssh -i Insight.pem ubuntu@52.32.209.66'
 
 
 #Tun on zsh syntax highlighting.
