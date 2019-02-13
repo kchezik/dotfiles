@@ -108,6 +108,7 @@ alias ls='ls -aFG'
 alias dirs="dirs -v"
 alias code='open -a "Visual Studio Code.app"'
 alias Insight='ssh -i Insight.pem ubuntu@52.32.209.66'
+alias nb='jupyter notebook'
 
 
 #Tun on zsh syntax highlighting.
