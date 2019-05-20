@@ -56,19 +56,6 @@ source $ZSH/oh-my-zsh.sh
 
 export MANPATH="/usr/local/man:$MANPATH"
 
-# Access to GDAL via terminal
-export PATH=$PATH:/Library/Frameworks/GDAL.framework/Programs:/Library/Frameworks/GEOS.framework
-
-# Access to SAGA to get libraries
-export SAGA_MLB=/Applications/QGIS.app/Contents/MNacOS/lib/saga
-
-# QGIS Terminal Support
-export PATH=$PATH:/Applications/QGIS.app/Contents/MacOS/bin
-export DYLD_LIBRARY_PATH=/Applications/QGIS.app/Contents/Resources/python$PYTHONPATH
-export LD_LIBRARY_PATH=/Applications/QGIS.app/Contents/Resources/python:$LD_LIBRARY_PATH
-
-# File path to help pandoc find latex.
-export PATH=$PATH:/Library/Tex/Distributions/.DefaultTex/Contents/Programs/texbin
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -110,6 +97,22 @@ alias code='open -a "Visual Studio Code.app"'
 alias Insight='ssh -i Insight.pem ubuntu@52.32.209.66'
 alias nb='jupyter notebook'
 
+# include whitebox_tools
+export PYTHONPATH="/Users/kylechezik/Documents/Research_Apps/WBT/:$PYTHONPATH"
+
+# Access to GDAL via terminal
+export PATH="/Library/Frameworks/GDAL.framework/Programs:/Library/Frameworks/GEOS.framework:$PATH"
+
+# Access to SAGA to get libraries
+export SAGA_MLB="/Applications/QGIS.app/Contents/MNacOS/lib/saga"
+
+# QGIS Terminal Support
+export PATH="/Applications/QGIS.app/Contents/MacOS/bin:$PATH"
+export DYLD_LIBRARY_PATH="/Applications/QGIS.app/Contents/Resources/python:$PYTHONPATH"
+export LD_LIBRARY_PATH="/Applications/QGIS.app/Contents/Resources/python:$LD_LIBRARY_PATH"
+
+# File path to help pandoc find latex.
+export PATH="/Library/Tex/Distributions/.DefaultTex/Contents/Programs/texbin:$PATH"
 
 #Tun on zsh syntax highlighting.
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -117,8 +120,8 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . `brew --prefix`/etc/profile.d/z.sh
 
 # added by Anaconda3 5.0.1 installer
-export PATH="/Users/kylechezik/Documents/Research_Apps/anaconda3/bin:$PATH"
-export PATH="/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/python3:$PATH"
+export PATH="$PATH:/Users/kylechezik/Documents/Research_Apps/anaconda3/bin"
+export PATH="$PATH:/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/python3"
 
 # Switches based on local environment.
 export VIRTUALENVWRAPPER_LOCATION=/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
@@ -126,7 +129,5 @@ export VIRTUALENVWRAPPER_PYTHON=/Users/kylechezik/Documents/Research_Apps/anacon
 export WORKON_HOME=~/Envs
 source /Users/kylechezik/Documents/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
 
-# include whitebox_tools
-export PYTHONPATH="/Users/kylechezik/Documents/Research_Apps/WBT/:$PYTHONPATH"
 
-
+. /Users/kylechezik/Documents/Research_Apps/anaconda3/etc/profile.d/conda.sh
