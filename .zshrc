@@ -120,14 +120,14 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . `brew --prefix`/etc/profile.d/z.sh
 
 # added by Anaconda3 5.0.1 installer
-export PATH="$PATH:/Users/kylechezik/Documents/Research_Apps/anaconda3/bin"
-export PATH="$PATH:/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/python3"
+export PATH="$PATH:/Users/kylechezik/iTerra/Research_Apps/anaconda3/bin"
+export PATH="$PATH:/Users/kylechezik/iTerra/Research_Apps/anaconda3/bin/python3"
 
 # Switches based on local environment.
-export VIRTUALENVWRAPPER_LOCATION=/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
-export VIRTUALENVWRAPPER_PYTHON=/Users/kylechezik/Documents/Research_Apps/anaconda3/bin/python3
+export VIRTUALENVWRAPPER_LOCATION=/Users/kylechezik/iTerra/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/Users/kylechezik/iTerra/Research_Apps/anaconda3/bin/python3
 export WORKON_HOME=~/Envs
-source /Users/kylechezik/Documents/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
+source /Users/kylechezik/iTerra/Research_Apps/anaconda3/bin/virtualenvwrapper.sh
 
 
-. /Users/kylechezik/Documents/Research_Apps/anaconda3/etc/profile.d/conda.sh
+. /Users/kylechezik/iTerra/Research_Apps/anaconda3/etc/profile.d/conda.sh
