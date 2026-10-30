@@ -1,17 +1,11 @@
-" For Tim Popes pathogen.vim plug-in management tool.
-execute pathogen#infect()
-
 " ----------------
 " Visual setup
 " ---------------
 
-" Enable Syntax Colouring and Recognition
+" Enable Syntax Colouring and Recognition (inherits Ghostty's terminal palette)
 syntax enable
 filetype plugin on
 filetype indent on
-colorscheme nord
-set termguicolors
-let g:nord_comment_brightness = 12
 
 " line numbers:
 set nu
@@ -55,19 +49,16 @@ set nowb
 set ic
 set hls
 
-"----------------
-" NeoVim-R
-" ---------------
-let Rout_more_colors = 1
-let R_hl_term = 1
-
+" ----------------
+" Splits & Leader Key
+" ----------------
 " Easily resize splits:
 if bufwinnr(1)
   map + <C-W>+
   map _ <C-W>-
 endif
 
- " Quick jumping between splits
+" Quick jumping between splits
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-h> <C-W>h
@@ -79,15 +70,5 @@ let g:mapleader = ","
 let maplocalleader = ","
 let g:maplocalleader = ","
 
-" Change the key-binding to start R to  ,shift-R
-nmap <LocalLeader>R <plug>RStart
-imap <LocalLeader>R <plug>RStart
-vmap <LocalLeader>R <plug>RStart
-
-" Run R-script lines using ,r
-nmap <LocalLeader>r <plug>RDSendLine
-imap <LocalLeader>r <plug>RDSendLine
-vmap <LocalLeader>r <plug>RDSendLine
-
 " Change default shell to zsh
-set shell=/usr/local/bin/zsh
+set shell=/bin/zsh
