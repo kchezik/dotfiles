@@ -10,9 +10,21 @@ filetype indent on
 " line numbers:
 set nu
 
+" Keep at least 5 lines of context above/below cursor when scrolling:
+set scrolloff=5
+
+" Interactive tab-completion menu in command-line mode:
+set wildmenu
+
 " Wrap only at word boundaries:
 set lbr
 set wrap
+
+" Make backspace work naturally across line breaks and insert-mode starts:
+set backspace=indent,eol,start
+
+" Share yank/paste with the macOS system clipboard:
+set clipboard=unnamed
 
 " -------------------
 " Moving Around
@@ -33,10 +45,9 @@ vnoremap k gk
 " set spell
 set spelllang=en_us
 set spellsuggest=9 "show only 9 suggestions for misspelled words
-set noignorecase
 
-" set mouse mode
-set mouse=nicr
+" set mouse mode (all modes: normal, visual, insert, command)
+set mouse=a
 
 " No More .swp files!
 set noswapfile
@@ -44,31 +55,36 @@ set nobackup
 set nowb
 
 " ----------------
-" Search Settings
-" ----------------
-set ic
-set hls
-
-" ----------------
 " Splits & Leader Key
 " ----------------
-" Easily resize splits:
-if bufwinnr(1)
-  map + <C-W>+
-  map _ <C-W>-
-endif
-
-" Quick jumping between splits
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" Comma as leader and local leader:
+" Comma as leader and local leader (defined before <leader> mappings):
 let mapleader = ","
 let g:mapleader = ","
 let maplocalleader = ","
 let g:maplocalleader = ","
+
+" Easily resize splits:
+if bufwinnr(1)
+  nnoremap + <C-W>+
+  nnoremap _ <C-W>-
+endif
+
+" Quick jumping between splits
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+
+" ----------------
+" Search Settings
+" ----------------
+set ignorecase
+set smartcase
+set incsearch
+set hls
+
+" Clear search highlighting with ,<space>
+nnoremap <leader><space> :nohlsearch<CR>
 
 " Change default shell to zsh
 set shell=/bin/zsh
